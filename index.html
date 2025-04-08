@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kings Strike</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <h1>Kings Strike</h1>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#jogo">Sobre o Jogo</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#location-info">Localização</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="file:///C:/Users/Usu%C3%A1rio/Desktop/Trabalho%20WebLow/imagens/banner.png" alt="Banner do Jogo" width="100%">
+    </div>
+
+    <section class="hero">
+        <img src="file:///C:/Users/Usu%C3%A1rio/Desktop/Trabalho%20WebLow/imagens/000.png" alt="Personagem do jogo">
+        <h2>Bem-vindo ao Mundo de Aventuras!</h2>
+        <button onclick="playGame()">Jogar Agora</button>
+    </section>
+
+    <section id="jogo">
+        <h2>Sobre Kings Strike</h2>
+        <div class="conteudo">
+            <p>King’s Strike é um jogo indie que coloca você no papel de um bravo rei em uma jornada épica para resgatar a princesa, que foi capturada por temíveis porcos do mal. Em um mundo repleto de desafios e perigos, você enfrentará grandes obstáculos, precisando usar sua coragem e habilidades para superar cada inimigo no caminho.
+                Com uma jogabilidade envolvente e cheia de ação, King’s Strike proporciona uma experiência incrível, onde cada batalha vencida o aproxima de uma recompensa inesquecível. Prepare-se para viver essa grande aventura e provar que um verdadeiro rei nunca abandona sua missão! </p>
+            <img src="file:///C:/Users/Usu%C3%A1rio/Desktop/Trabalho%20WebLow/imagens/Jogo.jpg">
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Quem Somos</h2>
+        <div class="conteudo">
+            <p>A MAG é uma desenvolvedora de jogos independente que está dando seu primeiro grande passo no mundo dos games! Com muita dedicação e paixão pela indústria, estamos lançando nosso primeiro jogo, marcando o início de uma jornada cheia de desafios e conquistas.
+                Nosso objetivo é crescer, inovar e nos consolidar no mercado, sempre entregando experiências imersivas e envolventes para nossos jogadores. Acreditamos que o sucesso vem com a troca de ideias, por isso valorizamos cada opinião e feedback da nossa comunidade. Queremos construir jogos incríveis e, acima de tudo, proporcionar momentos de diversão para todos os nossos players.
+                Junte-se a nós nessa aventura e ajude a moldar o futuro da MAG! </p>
+            <img src="file:///C:/Users/Usu%C3%A1rio/Desktop/Trabalho%20WebLow/imagens/desenvolvedor.webp">
+        </div>
+    </section>
+
+    <div id="location-info">
+        <div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2954568774867!2d-52.371553724874836!3d-24.055897878463174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed7551b187ab21%3A0xddad38cc311ec63a!2sR.%20das%20Seringueiras%2C%20943%20-%20Jardim%20Araucaria%2C%20Campo%20Mour%C3%A3o%20-%20PR%2C%2087301-328!5e0!3m2!1spt-BR!2sbr!4v1743612585825!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="contact-info">
+            <h3>Contato</h3>
+            <p>Telefone: (44) 99999-9999</p>
+            <p>Email: contatomag@outlook.com</p>
+            <p>Endereço: Rua das Seringueiras, 943 - Campo Mourão, Paraná</p>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        function playGame() {
+            window.open('file:///C:/Users/Usu%C3%A1rio/Desktop/Trabalho%20WebLow/Jogo/index.html', '_blank');
+        }
+    </script>
+</body>
+</html>
