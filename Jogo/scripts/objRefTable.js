@@ -48,8 +48,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.Audio.Acts.StopAll
+		C3.Plugins.Audio.Acts.StopAll,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked
 	];
 };
 self.C3_JsPropNameTable = [
