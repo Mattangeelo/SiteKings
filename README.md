@@ -1,4 +1,4 @@
-# Projeto Integrador - Site Educacional
+# Projeto Primeiro Semestre 
 
 Este é um projeto desenvolvido como parte das disciplinas de **Lógica de Programação**, **Desenvolvimento Web** e **Desenvolvimento de Jogos**.
 
