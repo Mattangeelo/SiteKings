@@ -201,6 +201,9 @@ footer {
     margin: 60px auto;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
+.form-container h1{
+    text-align: center;
+}
 
 .form-container label {
     display: block;

@@ -53,7 +53,7 @@
     </section>
 
     <div class="form-container">
-        <h1>Cadastre-se</h1>
+        <h1>Ajude-nos a melhorar</h1>
         <form id="form">
             <label>Nome:</label>
             <input type="text" id="nome">
@@ -61,6 +61,8 @@
             <input type="email" id="email">
             <label>Telefone</label>
             <input type="tel" id="telefone">
+            <label>Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
             <button type="button" id="botao">Enviar</button>
         </form>
     </div>
@@ -106,12 +108,16 @@
             var nome = document.getElementById('nome').value;
             var email = document.getElementById('email').value;
             var telefone = document.getElementById('telefone').value;
+            var mensagem =  document.getElementById('mensagem').value;
             
-            if(nome === "" || email === "" || telefone === ""){
+            if(nome === "" || email === "" || telefone === "" || mensagem === ""){
                 alert('Um ou mais campos faltam ser preenchidos, Por favor os preencha e tente novamente!');
+            }else if(!email.includes('@')){
+                alert('O email inserido é invalido, por favor preencha com um email válido.')
             }else{
-                alert('Formulario preenchido com Sucesso!')
+                alert('Formulario Preenchido com Sucesso');
             }
+
 
         }
     </script>
